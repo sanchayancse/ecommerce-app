@@ -21,6 +21,7 @@ namespace API.Controllers
             return Ok(await repo.GetProductsAsync(brand, type, sort));
         }   
 
+        
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
